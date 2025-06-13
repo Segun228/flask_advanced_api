@@ -12,6 +12,8 @@ def str_to_bool(value: str) -> bool:
 DEV_PREFIX = os.getenv("DEV_PREFIX", "http://localhost:")
 PROD_PREFIX = os.getenv("PROD_PREFIX", "/")
 PORT = os.getenv("PORT", "8000")
+DEBUG = str_to_bool(os.getenv("DEBUG", "False"))
+HOST = os.getenv("HOST", "localhost")
 
 PROD = str_to_bool(os.getenv("PRODUCTION", "False"))
 if not PROD:
