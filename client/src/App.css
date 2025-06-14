@@ -1,0 +1,6 @@
+.flex_container{
+    display: flex;
+    flex-direction: column;
+    padding-block: 5vh;
+    gap: 2vh;
+}
