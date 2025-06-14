@@ -54,7 +54,7 @@ def edit_user(user_id):
     email = data.get("email")
     first_name = data.get("first_name")
     last_name = data.get("last_name")
-    age = data.get("age")
+    age = int(data.get("age"))
     country = data.get("country")
 
     if (not username

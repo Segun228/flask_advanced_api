@@ -1,10 +1,10 @@
 import axios from "axios";
 import { BASE_URL } from "../../config";
 
-const createUser = async ({email, first_name, last_name, age, country}) => {
+const createUser = async ({email, first_name, username, last_name, age, country}) => {
     try{
         const url = `${BASE_URL}/api/users`;
-        if (!email || !first_name || !last_name || !age || !country) {
+        if (!email || !first_name || !last_name || !age || !country || !username) {
             throw new Error("Missing required post fields");
         }
         const data = {email, first_name, last_name, age, country}

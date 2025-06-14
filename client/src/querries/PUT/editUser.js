@@ -1,9 +1,9 @@
 import axios from "axios";
 import { BASE_URL } from "../../config";
 
-const editUser = async ({email, first_name, last_name, age, country, id}) => {
+const editUser = async ({email, first_name, last_name, age, country, id, username}) => {
     try{
-        if (!email || !first_name || !last_name || !age || !country || !id) {
+        if (!email || !first_name || !last_name || !age || !country || !id || !username) {
             throw new Error("Missing required post fields");
         }
         const url = `${BASE_URL}/api/users/${id}`;
