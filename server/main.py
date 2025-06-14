@@ -7,7 +7,7 @@ from data.fake_data import users
 
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app)
 
 
 def find_user_by_id(id, users=users):
@@ -95,7 +95,7 @@ def create_user():
     email = data.get("email")
     first_name = data.get("first_name")
     last_name = data.get("last_name")
-    age = data.get("age")
+    age = int(data.get("age"))
     country = data.get("country")
 
     if (not username

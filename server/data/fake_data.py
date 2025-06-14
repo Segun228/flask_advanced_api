@@ -18,4 +18,4 @@ def generate_user(user_id):
     }
 
 
-users = [generate_user(i + 1) for i in range(100)]
+users = [generate_user(i + 1) for i in range(10)]

@@ -7,7 +7,7 @@ const editUser = async ({email, first_name, last_name, age, country, id, usernam
             throw new Error("Missing required post fields");
         }
         const url = `${BASE_URL}/api/users/${id}`;
-        const data = {email, first_name, last_name, age, country}
+        const data = {email, first_name, last_name, age, country, username}
         const response = await axios.put(
             url,
             data

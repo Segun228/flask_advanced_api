@@ -7,7 +7,7 @@ const createUser = async ({email, first_name, username, last_name, age, country}
         if (!email || !first_name || !last_name || !age || !country || !username) {
             throw new Error("Missing required post fields");
         }
-        const data = {email, first_name, last_name, age, country}
+        const data = {email, first_name, last_name, age, country, username}
         const response = await axios.post(
             url,
             data
