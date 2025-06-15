@@ -1,24 +1,26 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-# Virtual environment
-venv/
-ENV/
-env/
-.venv/
-
-# Environment variables file
+# dotenv
 .env
 
-# IDE files
-.vscode/
-.idea/
-
-# OS files
+# Mac
 .DS_Store
-Thumbs.db
 
 # Logs
+logs
 *.log
+
+# Build
+/build
+/dist
+
+# VSCode
+.vscode/
+
+# React
+*.local
+.cache/
